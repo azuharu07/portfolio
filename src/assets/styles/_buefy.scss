@@ -5,6 +5,10 @@
 $primary: #8c67ef;
 $primary-invert: findColorInvert($primary);
 
+.navbar.is-fixed-top {
+    position: sticky !important;
+}
+
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";

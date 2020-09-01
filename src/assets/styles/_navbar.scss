@@ -1,0 +1,13 @@
+@import "~bulma/sass/components/navbar.sass";
+
+body.has-navbar-fixed-top {
+    padding-top: 0;
+}
+
+.navbar-start {
+    @media screen and (min-width: 1024px) {
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
