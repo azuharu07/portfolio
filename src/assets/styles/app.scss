@@ -1,3 +1,7 @@
 @import "buefy";
 
 @import "navbar";
+
+html {
+    scroll-behavior: smooth;
+}
