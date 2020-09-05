@@ -4,6 +4,7 @@
 // Set your colors
 $primary: #8c67ef;
 $primary-invert: findColorInvert($primary);
+$body-background-color: $light;
 
 .navbar.is-fixed-top {
     position: sticky !important;
