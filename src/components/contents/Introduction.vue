@@ -5,9 +5,9 @@
                 <div class="tile introduction__account">
                     <img src="../../assets/images/azuharu07.png" width="300" alt="azuharu07@ntogawa" />
                 </div>
-                <div class="tile introduction__article">
-                    <div class="introduction__article-title">はじめまして！あずは@ntogawaです。</div>
-                    <div class="introduction__article-article">
+                <div class="tile introduction__content">
+                    <div class="introduction__content-title">はじめまして！あずは@ntogawaです。</div>
+                    <div class="introduction__content-article">
                         2018年に入社し、Javaを使ったバックエンドエンジニアとして働いでいました。<br />
                         現在は自社製品の設計開発・インフラ・営業・マーケティングまで手掛けてています。
                         少数精鋭のチームのかなり自由なポジションで、イベント企画等も経験しています。<br />
@@ -37,7 +37,7 @@ export default {
         max-height: 300px;
     }
 
-    &__article {
+    &__content {
         flex-direction: column;
 
         &-title {
@@ -47,6 +47,7 @@ export default {
 
         &-article {
             text-align: left;
+            margin-left: 2em;
         }
     }
 }
