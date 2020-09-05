@@ -1,5 +1,5 @@
 <template>
-    <b-navbar :fixed-top="true" type="is-dark">
+    <b-navbar :fixed-top="true">
         <template slot="start">
             <b-navbar-item href="#introduction">
                 Introduction
