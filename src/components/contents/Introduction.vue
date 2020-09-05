@@ -2,11 +2,18 @@
     <ContentComponent title="Introduction">
         <template>
             <div class="tile is-ancester introduction">
-                <div class="tile">
+                <div class="tile introduction__account">
                     <img src="../../assets/images/azuharu07.png" width="300" alt="azuharu07@ntogawa" />
                 </div>
-                <div class="tile">
-                    自己紹介
+                <div class="tile introduction__article">
+                    <div class="introduction__article-title">はじめまして！あずは@ntogawaです。</div>
+                    <div class="introduction__article-article">
+                        2018年に入社し、Javaを使ったバックエンドエンジニアとして働いでいました。<br />
+                        現在は自社製品の設計開発・インフラ・営業・マーケティングまで手掛けてています。
+                        少数精鋭のチームのかなり自由なポジションで、イベント企画等も経験しています。<br />
+                        プログラミング言語は主にVue.jsとPHPを使っており、他にもJava、Kotlin、Python等を経験しました。<br />
+                        今はAWSとアーキテクチャを勉強しています。よりユーザーのニーズにあった提案ができるように知識を広めたいと思っています。
+                    </div>
                 </div>
             </div>
         </template>
@@ -19,47 +26,28 @@ import ContentComponent from "@/components/items/ContentComponent.vue";
 export default {
     name: "Introduction",
     components: { ContentComponent },
-    data() {
-        return {
-            introductionData: [
-                { id: 1, first_name: "Jesse", last_name: "Simmons", date: "2016-10-15 13:43:27", gender: "Male" },
-                { id: 2, first_name: "John", last_name: "Jacobs", date: "2016-12-15 06:00:53", gender: "Male" },
-                { id: 3, first_name: "Tina", last_name: "Gilbert", date: "2016-04-26 06:26:28", gender: "Female" },
-                { id: 4, first_name: "Clarence", last_name: "Flores", date: "2016-04-10 10:28:46", gender: "Male" },
-                { id: 5, first_name: "Anne", last_name: "Lee", date: "2016-12-06 14:38:38", gender: "Female" },
-            ],
-            columns: [
-                {
-                    field: "id",
-                    label: "ID",
-                    width: "40",
-                    numeric: true,
-                },
-                {
-                    field: "first_name",
-                    label: "First Name",
-                },
-                {
-                    field: "last_name",
-                    label: "Last Name",
-                },
-                {
-                    field: "date",
-                    label: "Date",
-                    centered: true,
-                },
-                {
-                    field: "gender",
-                    label: "Gender",
-                },
-            ],
-        };
-    },
 };
 </script>
 
 <style lang="scss" scoped>
 .introduction {
-    // display: flex;
+    &__account {
+        margin: auto;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    &__article {
+        flex-direction: column;
+
+        &-title {
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+
+        &-article {
+            text-align: left;
+        }
+    }
 }
 </style>
