@@ -1,0 +1,17 @@
+$margin-min: 1;
+$margin-max: 100;
+
+@for $i from $margin-min through $margin-max {
+    .mt#{$i} {
+        margin-top: #{$i}em;
+    }
+    .mr#{$i} {
+        margin-right: #{$i}em;
+    }
+    .mb#{$i} {
+        margin-bottom: #{$i}em;
+    }
+    .ml#{$i} {
+        margin-left: #{$i}em;
+    }
+}

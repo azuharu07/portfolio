@@ -1,0 +1,17 @@
+$padding-min: 1;
+$padding-max: 100;
+
+@for $i from $padding-min through $padding-max {
+    .mt#{$i} {
+        padding-top: #{$i}em;
+    }
+    .mr#{$i} {
+        padding-right: #{$i}em;
+    }
+    .mb#{$i} {
+        padding-bottom: #{$i}em;
+    }
+    .ml#{$i} {
+        padding-left: #{$i}em;
+    }
+}

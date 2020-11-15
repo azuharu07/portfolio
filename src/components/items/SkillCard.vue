@@ -1,8 +1,8 @@
 <template>
     <div class="card skill-card">
         <header class="card-header">
-            <img :src="image" />
-            <p class="card-header-title skill-card__title">
+            <!--<img :src="image" />-->
+            <p class="card-header-title flex-center">
                 {{ title }}
             </p>
         </header>
@@ -13,7 +13,9 @@
                 :increment="0.5"
                 :rating="level"
                 :read-only="true"
+                :inline="true"
             ></StarRating>
+            <p class="mt1">{{ description }}</p>
         </div>
     </div>
 </template>
@@ -35,16 +37,12 @@ export default {
             type: Number,
             default: 0,
         },
+        description: {
+            type: String,
+            default: "",
+        },
     },
 };
 </script>
 
-<style lang="scss">
-.skill-card {
-    margin: 1em auto;
-
-    &__title {
-        justify-content: center;
-    }
-}
-</style>
+<style lang="scss"></style>
